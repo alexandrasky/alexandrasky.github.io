@@ -9,6 +9,22 @@ export const projects: Project[] = [
     type: "university",
   },
   {
+    title: "Van Gogh Style Transfer with CycleGAN",
+    tags: ["Python", "Deep Learning", "AI", "Weights and Biases"],
+    description:
+      "In a two-person team, we built a neural style transfer system using CycleGAN to convert landscape photos into the impressionist painting style of Vincent van Gogh. Our implementation features a modular architecture of generators, discriminators, and residual networks.",
+    type: "university",
+  },
+  {
+    title: "Analysis of a particular software in context of Conway’s law",
+    description: `
+      This project analyzes an open-source software to understand its failure through the lens of Conway’s law. 
+      Neo4j is used for graph-based analysis of issues, contributors, and comments, detecting communities in the developer network. 
+      Software architecture is extracted using Enterprise Architect to recover class diagrams.`,
+    tags: ["Neo4j", "Graph Database", "UML"],
+    type: 'university',
+  },
+  {
     title: 'Django CRUD - RAW SQL',
     description: `Django REST API working on a PostgreSQL database of Slovakian businesses.
     API handles GET, POST and DELETE methods. Validates data posted as well.`,
@@ -72,23 +88,6 @@ export const projects: Project[] = [
     tags: ['C', 'Algorithms', 'Games'],
     type: 'university',
   },
-  {
-    title: "Van Gogh Style Transfer with CycleGAN",
-    tags: ["Python", "Deep Learning", "Image generation", "Weights and Biases", "Convolutional Networks"],
-    description:
-      "In a two-person team, we built a neural style transfer system using CycleGAN to convert landscape photos into the impressionist painting style of Vincent van Gogh. Our implementation features a modular architecture of generators, discriminators, and residual networks.",
-    type: "university",
-  },
-  {
-    title: "Analysis of a particular software in context of Conway’s law",
-    description: `
-      This project analyzes an open-source software to understand its failure through the lens of Conway’s law. 
-      Neo4j is used for graph-based analysis of issues, contributors, and comments, detecting communities in the developer network. 
-      Software architecture is extracted using Enterprise Architect to recover class diagrams.`,
-    tags: ["Neo4j", "Graph Database", "UML"],
-    type: 'university',
-  },
-
   
   {
     title: "ChatBot Front-end",
