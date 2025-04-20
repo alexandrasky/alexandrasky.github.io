@@ -2,8 +2,9 @@ import { FaGithub } from 'react-icons/fa';
 import { Project } from "../types/project";
 
 export default function ProjectCard({ project }: { project: Project }) {
+  // bg-gray-800
   return (
-    <div className="bg-gray-800 rounded-lg shadow-xl p-6 transition-transform transform hover:scale-105">
+    <div className=" bg-gray-800 bg-opacity-90 rounded-lg shadow-xl p-6 transition-transform transform hover:scale-105">
       <h3 className="text-xl text-white">{project.title}</h3>
       <p className="mt-2 text-gray-400">{project.description}</p>
 

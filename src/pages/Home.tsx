@@ -1,5 +1,3 @@
-'use client';
-
 import { useState } from 'react';
 import { projects } from '../data/projects';
 import ProjectCard from '../components/ProjectCard';
@@ -9,7 +7,7 @@ export default function Home() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const allTags = Array.from(new Set(projects.flatMap((p) => p.tags)));
-  
+
   const filteredProjects = selectedTags.length
     ? projects.filter((p) =>
         selectedTags.some((tag) => p.tags.includes(tag))  // Check if any of the selected tags match
@@ -17,22 +15,16 @@ export default function Home() {
     : projects;
 
   const universityProjects = filteredProjects.filter(p => p.type === 'university');
-  const workProjects = filteredProjects.filter(p => p.type === 'work');  
+  const workProjects = filteredProjects.filter(p => p.type === 'work');
+  // bg-gradient-to-r from-blue-500 via-purple-600 to-pink-600
 
   return (
-    <div className="px-6 py-10 max-w-7xl mx-auto space-y-10">
-
+    <div className="px-6 py-10 max-w-7xl mx-auto space-y-10 bg-black bg-opacity-25 rounded-lg ">
       {/* Intro Section */}
       <section id="one" className="wrapper style3 fade-up pt-8">
         <div className="inner space-y-2">
           <h2 className='font-bold text-3xl'>What can I do</h2>
           <p>Select a tag to filter projects.</p>
-          {/*
-          <p>
-            Here is a quick review of the projects I did. The projects were mostly made as an assignment from my Uni.
-            To check the code as well as read more in-depth documentation, please refer to the GitHub repository of each project.
-          </p>
-          */}
         </div>
       </section>
 
@@ -49,10 +41,9 @@ export default function Home() {
               }
             }}
             className={`text-sm font-medium px-4 py-1.5 rounded-full border transition-all duration-200 shadow-sm
-              ${
-                selectedTags.includes(tag)
-                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-transparent'
-                  : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
+              ${selectedTags.includes(tag)
+                ? 'bg-gradient-to-r from-teal-500 to-indigo-800 text-white border-transparent'
+                : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
               }`}
           >
             {tag}
@@ -67,7 +58,6 @@ export default function Home() {
           </button>
         )}
       </div>
-
 
       {/* Work Projects Grid */}
       <div className="space-y-2">
