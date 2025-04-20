@@ -2,6 +2,13 @@ import { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
+    title: "STUART: Spontaneous Use Case Re-Documentation in Scrum",
+    description: "Awarded Best Paper at IIT.SRC 2023, this project presents a Confluence macro powered by NLP that re-documents use cases non-invasively within Agile workflows. It automatically generates use cases from Jira user stories and tasks, builds main success scenarios, and identifies actors. ",
+    //link: "https://alexandrasky.github.io/files/STUART-paper.pdf", 
+    tags: ["Agile", "Scrum", "Confluence", "Jira", "NLP", "UML"],
+    type:  "university",
+  },  
+  {
     title: "Usability Test Report",
     description:
       "Together with a teammate, we conducted a usability test for an interactive ebook application to identify user pain points and suggest improvements. We focused on issues like navigation, image accuracy, feedback mechanisms, and clarity of instructions.",
