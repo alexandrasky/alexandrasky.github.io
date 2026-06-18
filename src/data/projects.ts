@@ -2,12 +2,12 @@ import { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
-    title: "STUART: Spontaneous Use Case Re-Documentation in Scrum",
-    description: "Awarded Best Paper at IIT.SRC 2023, this project presents a Confluence macro powered by NLP that re-documents use cases non-invasively within Agile workflows. It automatically generates use cases from Jira user stories and tasks, builds main success scenarios, and identifies actors. ",
-    //link: "https://alexandrasky.github.io/files/STUART-paper.pdf", 
-    tags: ["Agile", "Scrum", "Confluence", "Jira", "NLP", "UML"],
-    type:  "university",
-  },  
+    title: "STUART: Scrum Use Case Re-Documentation",
+    description:
+      "Award-winning research project that automatically reconstructs UML use cases from Jira user stories and tasks within Agile workflows. Published and awarded Best Paper at IIT.SRC 2023.",
+    tags: ["NLP", "Jira", "Confluence", "UML", "Research"],
+    type: "university",
+  },
   {
     title: "Usability Test Report",
     description:
@@ -17,85 +17,18 @@ export const projects: Project[] = [
   },
   {
     title: "Van Gogh Style Transfer with CycleGAN",
-    tags: ["Python", "Deep Learning", "AI", "Weights and Biases"],
     description:
-      "In a two-person team, we built a neural style transfer system using CycleGAN to convert landscape photos into the impressionist painting style of Vincent van Gogh. Our implementation features a modular architecture of generators, discriminators, and residual networks.",
+      "Developed a neural style transfer system using CycleGAN to transform landscape photographs into the artistic style of Vincent van Gogh. Implemented and evaluated deep learning models in a research setting.",
+    tags: ["Python", "Deep Learning", "CycleGAN", "AI"],
     type: "university",
   },
   {
-    title: "Analysis of a particular software in context of Conway’s law",
-    description: `
-      This project analyzes an open-source software to understand its failure through the lens of Conway’s law. 
-      Neo4j is used for graph-based analysis of issues, contributors, and comments, detecting communities in the developer network. 
-      Software architecture is extracted using Enterprise Architect to recover class diagrams.`,
-    tags: ["Neo4j", "Graph Database", "UML"],
-    type: 'university',
+    title: "Conway's Law Software Analysis",
+    description:
+      "Analyzed an open-source software project through the lens of Conway's Law using graph databases, community detection, and software architecture recovery techniques.",
+    tags: ["Neo4j", "Graph Databases", "Software Architecture", "Research"],
+    type: "university",
   },
-  {
-    title: 'Django CRUD - RAW SQL',
-    description: `Django REST API working on a PostgreSQL database of Slovakian businesses.
-    API handles GET, POST and DELETE methods. Validates data posted as well.`,
-    link: 'https://github.com/alexandrasky/Django-raw-SQL',
-    tags: ['Python', 'SQL'],
-    type: 'university',
-  },
-  {
-    title: 'Django CRUD - ORM',
-    description: `Similar to the preceding project, but uses ORM instead of raw SQL. 
-    Webapp was hosted on Azure, database on AWS.`,
-    link: 'https://github.com/alexandrasky/Django-ORM',
-    tags: ['Python'],
-    type: 'university',
-  },
-  {
-    title: 'UDP Communicator',
-    description: `Custom protocol designed over the UDP transport layer of the TCP/IP model. 
-    Enables text messaging and file transfer between two participants on a local Ethernet network.`,
-    link: 'https://github.com/alexandrasky/UDP-Communicator',
-    tags: ['C++', 'Networking'],
-    type: 'university',
-  },
-  {
-    title: 'Traveling Salesman Problem',
-    description: `Solves the TSP using a genetic algorithm with two selection methods. 
-    Finds the shortest cyclic path that visits each city exactly once among 20–40 cities.`,
-    link: 'https://github.com/alexandrasky/TSP',
-    tags: ['C++', 'AI', 'Algorithms'],
-    type: 'university',
-  },
-  {
-    title: 'Color Classifier',
-    description: `Classifies colors of newly generated points on a 2D map using the k-nearest neighbors (KNN) algorithm. 
-    Existing points with known colors are used for classification.`,
-    link: 'https://github.com/alexandrasky/Color-Classifier',
-    tags: ['Java', 'AI'],
-    type: 'university',
-  },
-  {
-    title: 'OOP demonstration',
-    description: `Demonstrates Object Oriented Programming concepts such as polymorphism, encapsulation, aggregation, and design patterns 
-    through a fictional invoice viewer project.`,
-    link: '',
-    tags: ['Java', 'OOP', 'Design Patterns'],
-    type: 'university',
-  },
-  {
-    title: 'Hash table implementation',
-    description: `Implements a hash table using open addressing and division method. 
-    Automatically resizes when over 50% full to the next prime number of double the size.`,
-    link: 'https://github.com/alexandrasky/Hash-table-implementation',
-    tags: ['C', 'Data Structures'],
-    type: 'university',
-  },
-  {
-    title: 'Dijkstra + Min Heap',
-    description: `Implements a pathfinding game where a knight must rescue princesses before a dragon reaches them. 
-    Utilizes Dijkstra's algorithm with a Min Heap for efficient shortest path calculation.`,
-    link: 'https://github.com/alexandrasky/Dijkstra-Min-Heap',
-    tags: ['C', 'Algorithms', 'Games'],
-    type: 'university',
-  },
-  
   {
     title: "ChatBot Front-end",
     description: "A React-based chatbot interface designed to replicate the look of ChatGPT. Built for internal use, allowing users to ask questions about documentation.",
@@ -116,15 +49,25 @@ export const projects: Project[] = [
   },
   {
     title: "Conformity Check",
-    description: "A handover project designed to validate whether data conforms to expected formats using SQL and regular expressions. Results are visualized in Power BI dashboards for monitoring and reporting.",
-    tags: ["SQL", "RegEx", "PowerBI"],
-    type: 'work',  
+    description:
+      "Maintained and enhanced an enterprise data quality framework validating customer data against hundreds of business-defined rules and regular expressions. Supported early detection of data integrity issues across large-scale reporting systems.",
+    tags: ["SQL", "Data Quality", "RegEx", "Power BI"],
+    type: "work",
   },
   {
-    title: "Anomaly Check",
-    description: "A handover project focused on identifying anomalies in SQL datasets, such as changes in null value patterns and unexpected data trends. Helps maintain consistent data quality across reporting systems.",
-    tags: ["SQL", "PowerBI"],
-    type: 'work',
+    title: "Anomaly Detection Framework",
+    description:
+      "Maintained and extended an automated monitoring framework detecting unusual shifts in data completeness and quality metrics. Enabled proactive identification of upstream data pipeline issues before impacting downstream reporting.",
+    tags: ["SQL", "Data Quality", "Power BI"],
+    type: "work",
   },
-  
+  {
+    title: "Literarne",
+    description:
+      "Full-stack web and mobile platform for collaborative annotation of poetry and literary works. Designed and developed end-to-end using React Native, TypeScript, serverless APIs, and Sanity CMS.",
+    tags: ["React Native", "TypeScript", "Full-stack", "Mobile", "Expo"],
+    type: "personal",
+  },
+
+ 
 ];

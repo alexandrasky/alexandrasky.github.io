@@ -3,7 +3,7 @@ export type Project = {
   description: string;
   link?: string;
   tags: string[];
-  type: 'university' | 'work'; 
+  type: 'university' | 'work' | 'personal' | 'archive'; 
 };
 
 
