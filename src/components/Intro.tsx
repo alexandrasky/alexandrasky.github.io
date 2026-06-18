@@ -13,7 +13,7 @@ const Intro: React.FC = () => {
           Alexandra Skyvová
         </h1>
         <p className="mt-4 text-lg md:text-2xl mb-6 animate__animated animate__fadeIn animate__delay-2s">
-          Recent computer science graduate with experience in data analytics and a growing interest in web-app development.
+          Software Engineer with experience building full-stack applications, AI-powered tools, and large-scale data quality systems.
         </p>
         <a
           href="#one"
