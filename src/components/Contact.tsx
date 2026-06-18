@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
             <h3 className="text-2xl font-semibold flex items-center gap-3 text-teal-400">
             {FiMapPin({ className: "w-5 h-5" })} Location
             </h3>
-            <p className="mt-2 text-lg">Slovakia, Europe</p>
+            <p className="mt-2 text-lg">Bratislava, Slovakia</p>
           </div>
 
           {/* Socials Section */}
