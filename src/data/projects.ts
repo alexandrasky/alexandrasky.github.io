@@ -17,19 +17,45 @@ export const projects: Project[] = [
     ],
   },
 
-  {
-    title: "Usability Test Report",
+    {
+    title: "AI-Assisted Reading UIX Research",
     description:
-      "Conducted a usability evaluation of an interactive e-book application and proposed UX improvements.",
+      "Researched how AI can enhance the reading experience by identifying reader needs, designing AI-assisted features, and evaluating user interaction through prototype testing.",
+
     longDescription:
-      "Planned and executed a usability study of an interactive e-book application together with a teammate. We designed test scenarios, observed participants, documented usability issues, and prioritized recommendations. The study uncovered problems related to navigation, feedback, image interpretation, and instructional clarity.",
-    tags: ["UI/UX", "Figma", "Prototyping"],
+      "Conducted a user-centered research project exploring the role of AI in recreational reading. Together with a teammate, we interviewed book enthusiasts to understand their reading habits, challenges, and unmet needs. Based on the findings, we identified opportunities where AI could provide meaningful assistance, designed interactive prototypes in Figma, and evaluated the resulting human-AI interaction through usability testing. The project combined user research, UX design, prototyping, and AI-focused product discovery.",
+
+    tags: [
+      "UI/UX",
+      "Figma",
+      "Prototyping",
+      "AI",
+      "User Research"
+    ],
+
     type: "university",
+
     highlights: [
-      "Designed user testing scenarios",
-      "Observed and analyzed user behavior",
-      "Produced UX improvement recommendations",
-      "Created usability report and findings",
+      "Conducted interviews with recreational readers",
+      "Identified AI-assisted reading use cases",
+      "Designed interactive prototypes in Figma",
+      "Evaluated human-AI interaction patterns",
+      "Performed usability testing and analysis",
+      "Translated user needs into product features"
+    ],
+     media: [
+    {
+      type: "video",
+      src: "/img/ai-assisted-reading/video1.mp4",
+    },
+    {
+      type: "video",
+      src: "/img/ai-assisted-reading/video2.mp4",
+    },
+    {
+      type: "video",
+      src: "/img/ai-assisted-reading/video3.mp4",
+    },
     ],
   },
 
@@ -46,6 +72,12 @@ export const projects: Project[] = [
       "Trained deep learning models in Python",
       "Performed image-to-image translation",
       "Evaluated generated artistic outputs",
+    ],
+    media: [
+    {
+      type: "image",
+      src: "/img/cyclegan/van-gogh.png",
+    },
     ],
   },
 
@@ -66,7 +98,44 @@ export const projects: Project[] = [
   },
 
   {
-    title: "ChatBot Front-end",
+    title: "AI-Powered Jira Knowledge Agent",
+    description:
+      "Enterprise AI assistant that enables legal teams to query Jira tickets, documentation, and knowledge bases using natural language.",
+
+    longDescription:
+      "Contributed to the development of an AI-powered knowledge retrieval system integrated with Jira. The solution allowed users to ask questions about tickets, documentation, and internal resources through a conversational interface. The system combined large language models with vector-based knowledge retrieval to provide contextual answers based on enterprise data. Responsibilities included frontend development, backend integration, document ingestion workflows, and deployment to internal infrastructure.",
+
+    tags: [
+      "AI",
+      "LLM",
+      "RAG",
+      "React",
+      "Python",
+      "Vector Database",
+      "Jira"
+    ],
+
+    type: "work",
+
+    highlights: [
+      "Integrated large language models with enterprise knowledge sources",
+      "Implemented vector-based document retrieval workflows",
+      "Built conversational user interfaces in React",
+      "Processed Jira tickets and documentation as context",
+      "Automated document synchronization pipelines",
+      "Deployed on internal infrastructure"
+    ],
+    media: [
+      {
+        type: "image",
+        src: "/img/jira-knowledge-agent/architecture.png",
+      },
+    ],
+
+  },
+
+  {
+    title: "AI ChatBot Front-end",
     description:
       "Built a ChatGPT-inspired interface for an internal AI assistant used to search enterprise documentation.",
     longDescription:
