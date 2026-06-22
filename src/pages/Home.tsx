@@ -61,22 +61,22 @@ export default function Home() {
       </div>
 
       <ProjectSection
-        title="Featured / Personal Projects"
-        description="Projects I built independently to practice full-stack development, product thinking, and deployment."
+        title="Featured Work"
+        description="A project I designed and developed independently from concept to deployment."
         projects={personalProjects}
         onProjectClick={setSelectedProject}
       />
 
       <ProjectSection
         title="Work Projects"
-        description="Projects I worked on as part of my job."
+        description="Examples of solutions delivered in a professional setting, ranging from AI-powered tools and web applications to workflow automation and data engineering."
         projects={workProjects}
         onProjectClick={setSelectedProject}
       />
 
       <ProjectSection
         title="University Projects"
-        description="Academic projects and assignments with code and documentation."
+        description="Selected academic and research projects covering software engineering, artificial intelligence, human-computer interaction, and system design."
         projects={universityProjects}
         onProjectClick={setSelectedProject}
       />
