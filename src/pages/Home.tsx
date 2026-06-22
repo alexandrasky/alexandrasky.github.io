@@ -8,6 +8,7 @@ import FeaturedProjectCard from "../components/FeaturedProjectCard";
 export default function Home() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [showFilters, setShowFilters] = useState(false);
 
   const featuredProject = projects.find((p) => p.title === "literarne.sk");
 
@@ -56,44 +57,57 @@ export default function Home() {
       )}
 
       <section className="space-y-3">
-        <div>
-          <h2 className="text-xl font-semibold">Filter by Technology</h2>
-          <p className="text-sm opacity-90">
-            Select one or more tags to filter the project list below.
-          </p>
-        </div>
+        <button
+          onClick={() => setShowFilters((prev) => !prev)}
+          className="flex items-center justify-between w-full rounded-xl bg-white/10 px-4 py-3 text-left hover:bg-white/15 transition"
+        >
+          <div>
+            <h2 className="text-xl font-semibold">Filter by Technology</h2>
+            <p className="text-sm opacity-90">
+              {selectedTags.length > 0
+                ? `${selectedTags.length} filter${selectedTags.length > 1 ? "s" : ""} selected`
+                : "Show tags to filter the project list below."}
+            </p>
+          </div>
 
-        <div className="flex flex-wrap gap-3">
-          {allTags.map((tag) => (
-            <button
-              key={tag}
-              onClick={() =>
-                setSelectedTags((prev) =>
-                  prev.includes(tag)
-                    ? prev.filter((t) => t !== tag)
-                    : [...prev, tag]
-                )
-              }
-              className={`text-sm font-medium px-4 py-1.5 rounded-full border transition-all duration-200 shadow-sm
-                ${
-                  selectedTags.includes(tag)
-                    ? "bg-gradient-to-r from-teal-500 to-indigo-800 text-white border-transparent"
-                    : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
-                }`}
-            >
-              {tag}
-            </button>
-          ))}
+          <span className="text-xl">
+            {showFilters ? "−" : "+"}
+          </span>
+        </button>
 
-          {selectedTags.length > 0 && (
-            <button
-              onClick={() => setSelectedTags([])}
-              className="text-sm font-medium px-4 py-1.5 rounded-full border border-red-300 bg-red-100 text-red-700 hover:bg-red-200"
-            >
-              Clear Filters
-            </button>
-          )}
-        </div>
+        {showFilters && (
+          <div className="flex flex-wrap gap-3">
+            {allTags.map((tag) => (
+              <button
+                key={tag}
+                onClick={() =>
+                  setSelectedTags((prev) =>
+                    prev.includes(tag)
+                      ? prev.filter((t) => t !== tag)
+                      : [...prev, tag]
+                  )
+                }
+                className={`text-sm font-medium px-4 py-1.5 rounded-full border transition-all duration-200 shadow-sm
+                  ${
+                    selectedTags.includes(tag)
+                      ? "bg-gradient-to-r from-teal-500 to-indigo-800 text-white border-transparent"
+                      : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+                  }`}
+              >
+                {tag}
+              </button>
+            ))}
+
+            {selectedTags.length > 0 && (
+              <button
+                onClick={() => setSelectedTags([])}
+                className="text-sm font-medium px-4 py-1.5 rounded-full border border-red-300 bg-red-100 text-red-700 hover:bg-red-200"
+              >
+                Clear Filters
+              </button>
+            )}
+          </div>
+        )}
       </section>
 
       {personalProjects.length > 0 && (
