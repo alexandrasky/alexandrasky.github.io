@@ -1,4 +1,3 @@
-import { FaGithub } from 'react-icons/fa';
 import { Project } from "../types/project";
 
 export default function ProjectCard({
