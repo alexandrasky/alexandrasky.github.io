@@ -151,6 +151,35 @@ export const projects: Project[] = [
   },
 
   {
+    title: "Entity Resolution Self-Service Platform",
+
+    description:
+      "Transformed a Jupyter Notebook-based entity matching workflow into a web application accessible to non-technical users.",
+
+    longDescription:
+      "Developed the frontend of a web application that operationalized an existing entity resolution workflow previously executed through Jupyter Notebooks. The solution enabled business users to perform entity matching without installing Python environments or interacting with notebook code. Built using React and TypeScript, containerized with Podman, and deployed to Kubernetes through CI/CD pipelines.",
+
+    tags: [
+      "React",
+      "TypeScript",
+      "Kubernetes",
+      "CI/CD",
+      "Podman"
+    ],
+
+    type: "work",
+
+    highlights: [
+      "Modernized a notebook-based entity matching workflow",
+      "Enabled self-service access for non-technical users",
+      "Built with React and TypeScript",
+      "Containerized using Podman",
+      "Deployed via CI/CD pipelines",
+      "Hosted on Kubernetes"
+    ]
+  },
+
+  {
     title: "Record Search Tool",
     description:
       "Full-stack application enabling non-technical users to search and inspect enterprise database records without SQL.",
@@ -171,6 +200,35 @@ export const projects: Project[] = [
       "Designed for non-technical users",
       "Reduced dependency on manual SQL queries",
     ],
+  },
+
+  {
+    title: "Self-Service Workflow Scheduling",
+
+    description:
+      "Built a configuration-driven scheduling system that allowed non-technical users to create Apache Airflow workflows without writing Python code.",
+
+    longDescription:
+      "Developed a framework that generates Apache Airflow DAGs from YAML configuration files, allowing users to schedule Teradata processes without needing knowledge of Python or Airflow internals. The project was inspired by an existing PostgreSQL-based implementation and required analyzing legacy code, understanding internal scheduling infrastructure, and adapting the solution for Teradata workloads. By moving workflow definitions into configuration files, the solution made process scheduling accessible to a broader range of team members while reducing dependency on developers.",
+
+    tags: [
+      "Python",
+      "Apache Airflow",
+      "YAML",
+      "Automation",
+      "Teradata"
+    ],
+
+    type: "work",
+
+    highlights: [
+      "Generated Airflow DAGs from YAML configuration",
+      "Enabled non-technical users to schedule processes",
+      "Adapted an existing PostgreSQL solution for Teradata",
+      "Worked with legacy scheduling infrastructure",
+      "Reduced dependency on Python knowledge",
+      "Improved accessibility of workflow automation"
+    ]
   },
 
   {
