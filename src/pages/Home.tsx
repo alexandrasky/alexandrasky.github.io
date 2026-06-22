@@ -3,6 +3,7 @@ import { projects } from '../data/projects';
 import ProjectCard from '../components/ProjectCard';
 import ProjectModal from '../components/ProjectModal';
 import { Project } from '../types/project';
+import FeaturedProjectCard from '../components/FeaturedProjectCard';
 
 export default function Home() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -17,8 +18,14 @@ export default function Home() {
     : projects;
 
   const workProjects = filteredProjects.filter(p => p.type === 'work');
-  const personalProjects = filteredProjects.filter(p => p.type === 'personal');
+  //const personalProjects = filteredProjects.filter(p => p.type === 'personal');
   const universityProjects = filteredProjects.filter(p => p.type === 'university');
+
+  const featuredProject = projects.find((p) => p.title === "literarne.sk");
+
+  const personalProjects = filteredProjects.filter(
+    (p) => p.type === "personal" && p.title !== "Literarne"
+  );
 
   return (
     <div className="px-6 py-10 max-w-7xl mx-auto space-y-10 bg-black bg-opacity-25 rounded-lg">
@@ -60,12 +67,28 @@ export default function Home() {
         )}
       </div>
 
+      {featuredProject && (
+        <section className="space-y-3">
+          <h2 className="text-2xl font-semibold">Featured Project</h2>
+          <p>
+            An independently developed product showcasing full-stack engineering,
+            mobile development, and user-focused design.
+          </p>
+
+          <FeaturedProjectCard
+            project={featuredProject}
+            onClick={() => setSelectedProject(featuredProject)}
+          />
+        </section>
+      )}
+
+      {/*
       <ProjectSection
         title="Featured Work"
         description="A project I designed and developed independently from concept to deployment."
         projects={personalProjects}
         onProjectClick={setSelectedProject}
-      />
+      /> */}
 
       <ProjectSection
         title="Work Projects"

@@ -295,20 +295,16 @@ export const projects: Project[] = [
     type: "personal",
     media: [
     {
+      type: "image",
+      src: "/img/literarne/hero_svk.png",
+    },
+    {
+      type: "image",
+      src: "/img/literarne/hero_en.png",
+    },
+    {
       type: "video",
       src: "/img/literarne/demo.mp4",
-    },
-    {
-      type: "image",
-      src: "/img/literarne/day_mode.png",
-    },
-    {
-      type: "image",
-      src: "/img/literarne/night_mode2.png",
-    },
-    {
-      type: "image",
-      src: "/img/literarne/architecture.png",
     },
     ],
     highlights: [
