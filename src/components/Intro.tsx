@@ -10,7 +10,7 @@ const Intro: React.FC = () => {
       {/* Content Section */}
       <div className="relative m-10 text-center text-white px-8 py-16 md:px-16 md:py-20 bg-black bg-opacity-60 rounded-lg">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 animate__animated animate__fadeIn animate__delay-1s">
-          Alexandra Skyvová
+          Alexandra Rozgoňová
         </h1>
         <p className="mt-4 text-lg md:text-2xl mb-6 animate__animated animate__fadeIn animate__delay-2s">
           Software Engineer with experience building full-stack applications, AI-powered tools, and large-scale data quality systems.
